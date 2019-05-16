@@ -6,7 +6,9 @@
     <title>Diky Hadna | Chatbot Developer 🤖</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <meta name="description" content="Diky Hadna | Chatbot developer 🤖">
 </head>
 
@@ -14,9 +16,14 @@
     <div class="botui-app-container" id="bot">
         <bot-ui></bot-ui>
     </div>
+    <canvas id="snow">
+        
+    </canvas>
+
     <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
     <script src="https://unpkg.com/botui/build/botui.js"></script>
-    <script src="./bot.js"></script>
+    <script src="./src/bot.js"></script>
+    <script src="./src/snow.js"></script>
 </body>
 
 </html>

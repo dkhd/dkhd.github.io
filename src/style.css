@@ -1,36 +1,45 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 .fa-quote-right {
-    color: rgb(34, 28, 28);
-  }
+    color: #fff;
+}
 
 ::-webkit-scrollbar {
-width: 0px;
-background: transparent;
+    width: 0px;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
 
-body {
-    background-color: #bae1ff;
-    height: 100%;
+body, html{
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 
+canvas{
+    background:#000;
+    width:100%;
+    height:100%;
+  }
+
+.botui-app-container {
+    position:absolute;
+    align-items:center;
+    left: 0;right: 0;
+}
 
 @media only screen and (min-width: 1024px) {
     .botui-app-container {
-        width: 40%
+        width: 40%;
     }
 }
 
-
 .botui-container {
     height: 90vh;
-    font-size: 20px;
+    font-size: 14px;
     background-color: transparent;
-    font-family: "Lato", sans-serif;
     padding-bottom: 50px;
 }
 
@@ -47,15 +56,16 @@ body {
 }
 
 .botui-message-content {
+    border: 2px outset #fff;
     padding: 10px 17px;
-    border-radius: 5px;
     color: rgb(34, 28, 28);
     background-color: #fff
 }
 
 .botui-message-content.human {
-    color: rgb(34, 28, 28);
-    background-color: #FAEFA5
+    color: #fff;
+    border: 2px outset #9cb3ff;
+    background-color: #6184f8;
 }
 
 .botui-message-content.text {
@@ -77,15 +87,27 @@ body {
     color: #919292
 }
 
+::-webkit-input-placeholder { /* Edge */
+    color: rgb(204, 204, 204);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: rgb(204, 204, 204);
+  }
+  
+  ::placeholder {
+    color: rgb(204, 204, 204);
+  }
+
 .botui-actions-text-input {
+    cursor: url(./../assets/cursor-click.png) 14 0,pointer;
     border: 0;
     outline: 0;
     border-radius: 0;
     padding: 5px 7px;
-    /* font-family: "Open Sans", sans-serif; */
     background-color: transparent;
-    color: rgb(34, 28, 28);
-    border-bottom: 1px solid #919292
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .botui-actions-text-submit {
@@ -99,18 +121,24 @@ body {
     background: #777979
 }
 
+button.botui-actions-buttons-button {
+    cursor: url(./../assets/cursor-click.png) 14 0,pointer;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
 .botui-actions-buttons-button {
     border: 0;
-    color: #fff;
+    color: #9a4800;
     line-height: 1;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
     padding: 20px 20px;
     border-radius: 4px;
-    /* font-family: "Open Sans", sans-serif; */
-    background: #40a1f1;
-    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, .5)
+    background: #fab931;
+    box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, .5);
+    border: 7px outset #ffef96;
 }
 
 .botui-actions-text-select {
@@ -118,7 +146,6 @@ body {
     outline: 0;
     border-radius: 0;
     padding: 5px 7px;
-    /* font-family: "Open Sans", sans-serif; */
     background-color: transparent;
     color: #595a5a;
     border-bottom: 1px solid #919292
@@ -129,7 +156,6 @@ body {
     outline: 0;
     border-radius: 0;
     padding: 5px 7px;
-    /* font-family: "Open Sans", sans-serif; */
     background-color: transparent;
     color: #595a5a;
     border-bottom: 1px solid #919292
